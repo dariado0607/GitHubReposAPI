@@ -1,0 +1,137 @@
+.resp-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 51.25% /*56.289%;*/
+}
+
+.one {
+  cursor: pointer;
+}
+
+.mainitem:focus {
+  border: solid 5px #d9ebf3;
+}
+
+.mainitem:hover {
+  border: solid 5px #d9ebf3;
+}
+
+.paddingComponents {
+  padding: 0px;
+}
+
+
+.imgLinks-row {
+  background-color: #eee;
+}
+
+.imgLinks-item {
+  /*width: 100%;*/
+  background-color: #eee;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  /*padding-top: 20px;*/
+  /*margin-bottom: 10px;*/
+  /*padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 30px*/
+}
+
+@media (max-width: 767.98px) {
+  .imgLinks-item {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+
+.imgLinks-img {
+  width: 25%;
+}
+
+.all-links {
+  display: block;
+  padding: 0 15px 0 15px;
+  margin: -5px 0 5px 0;
+}
+
+.container-links {
+  padding-top: 5px;
+}
+
+.text-container {
+  height: auto;
+  clear: both;
+  padding: 5px 15px 2px 15px;
+}
+
+
+
+.item-title {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*font-family: Assistant;*/
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #333;
+  text-align: left;
+}
+
+.links-item {
+  overflow: hidden;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: auto;
+}
+
+.a-item {
+  /*max-width: 220px;*/
+  display: block;
+  font-family: Assistant;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 120%;
+  color: #333;
+  text-align: right;
+}
+
+a.a-item:hover {
+  text-decoration: none;
+  opacity: .6;
+}
+
+
+
+
+.icon-img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  float: right;
+  margin-left: 10px;
+}
+
+h5 {
+  font-weight: bold !important;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 1px 0 0 0;
+  color: inherit;
+  margin-bottom: 5px;
+}
+
+h6 {
+  color: #1c5585;
+  font-size: 17px;
+  font-family: inherit;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'assistant' !important;
+  font-weight: 600 !important;
+}

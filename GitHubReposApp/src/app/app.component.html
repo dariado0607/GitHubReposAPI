@@ -1,0 +1,30 @@
+
+  <form class="form-inline waves-light" id="form1" name="form1" #form="ngForm">
+    <div class="md-form mt-0">
+      <input class="form-control mr-sm-2" type="text" [(ngModel)]="searchvalue" name="searchtext">
+      <button (click)="searchRepositories()">Search</button>
+    </div>
+  </form>
+
+  <div class="container" *ngIf="repositories.length > 0">
+    <div class="row">
+      <div class="col-xs-12 col-md-3 col-sm-3" *ngFor="let item of repositories" [id]="item.id">
+        <div class="imgLinks-item">
+          <img [src]="item.owner.avatar_url" class="imgLinks-img" />
+          <div class="item-title">
+            <h5>{{item.name}} </h5>
+          </div>
+          <div class="container-links">
+            <button class="btn btn-primary" (click)="bookmark(item.id)">Bookmark</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="repositories.length == 0">
+    <h1>NO RESULTS</h1>
+  </div>
+
+
+
+

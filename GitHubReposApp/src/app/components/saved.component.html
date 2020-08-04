@@ -1,0 +1,16 @@
+<div class="container" *ngIf="savedData.length > 0">
+  <div class="row">
+    <div class="col-xs-12 col-md-3 col-sm-3" *ngFor="let item of savedData" [id]="item.id">
+      <div class="imgLinks-item">
+        <img [src]="item.owner.avatar_url" class="imgLinks-img" />
+        <div class="item-title">
+          <h5>{{item.name}} </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="savedData.length == 0">
+  <h1>NO RESULTS</h1>
+</div>
+
